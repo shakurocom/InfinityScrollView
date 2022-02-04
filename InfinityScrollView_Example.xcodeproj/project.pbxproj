@@ -1,0 +1,449 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A5B1D79D279E682600263D7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B1D79C279E682600263D7A /* AppDelegate.swift */; };
+		A5B1D7A4279E682600263D7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5B1D7A2279E682600263D7A /* Main.storyboard */; };
+		A5B1D7A6279E682800263D7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5B1D7A5279E682800263D7A /* Assets.xcassets */; };
+		A5B1D7A9279E682800263D7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5B1D7A7279E682800263D7A /* LaunchScreen.storyboard */; };
+		A5B1D7BD279E6B3100263D7A /* ExampleInfinityScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B1D7BC279E6B3100263D7A /* ExampleInfinityScrollViewController.swift */; };
+		A5B1D7C2279E6D6700263D7A /* InfinityScrollView_Framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5B1D7C1279E6D6700263D7A /* InfinityScrollView_Framework.framework */; };
+		A5B1D7C3279E6D6700263D7A /* InfinityScrollView_Framework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A5B1D7C1279E6D6700263D7A /* InfinityScrollView_Framework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B0237E61F08D73577E9E9A87 /* Pods_InfinityScrollView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DFE5A6885EAF7971461988C /* Pods_InfinityScrollView_Example.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A5B1D7C4279E6D6700263D7A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A5B1D7C3279E6D6700263D7A /* InfinityScrollView_Framework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		45F3854A4186C4D14378D748 /* Pods-InfinityScrollView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InfinityScrollView_Example.release.xcconfig"; path = "Target Support Files/Pods-InfinityScrollView_Example/Pods-InfinityScrollView_Example.release.xcconfig"; sourceTree = "<group>"; };
+		7B9913F040DED0AF964CAA1A /* Pods-InfinityScrollView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InfinityScrollView_Example.debug.xcconfig"; path = "Target Support Files/Pods-InfinityScrollView_Example/Pods-InfinityScrollView_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		8DFE5A6885EAF7971461988C /* Pods_InfinityScrollView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InfinityScrollView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5B1D799279E682600263D7A /* InfinityScrollView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InfinityScrollView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5B1D79C279E682600263D7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A5B1D7A3279E682600263D7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A5B1D7A5279E682800263D7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A5B1D7A8279E682800263D7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A5B1D7AA279E682800263D7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5B1D7BC279E6B3100263D7A /* ExampleInfinityScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleInfinityScrollViewController.swift; sourceTree = "<group>"; };
+		A5B1D7C1279E6D6700263D7A /* InfinityScrollView_Framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = InfinityScrollView_Framework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A5B1D796279E682600263D7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5B1D7C2279E6D6700263D7A /* InfinityScrollView_Framework.framework in Frameworks */,
+				B0237E61F08D73577E9E9A87 /* Pods_InfinityScrollView_Example.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		237C45C2BD75CD4CEC26CFDC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B9913F040DED0AF964CAA1A /* Pods-InfinityScrollView_Example.debug.xcconfig */,
+				45F3854A4186C4D14378D748 /* Pods-InfinityScrollView_Example.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A5B1D790279E682500263D7A = {
+			isa = PBXGroup;
+			children = (
+				A5B1D79B279E682600263D7A /* InfinityScrollView_Example */,
+				A5B1D79A279E682600263D7A /* Products */,
+				A5B1D7C0279E6D6700263D7A /* Frameworks */,
+				237C45C2BD75CD4CEC26CFDC /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		A5B1D79A279E682600263D7A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A5B1D799279E682600263D7A /* InfinityScrollView_Example.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A5B1D79B279E682600263D7A /* InfinityScrollView_Example */ = {
+			isa = PBXGroup;
+			children = (
+				A5B1D79C279E682600263D7A /* AppDelegate.swift */,
+				A5B1D7BC279E6B3100263D7A /* ExampleInfinityScrollViewController.swift */,
+				A5B1D7A2279E682600263D7A /* Main.storyboard */,
+				A5B1D7A5279E682800263D7A /* Assets.xcassets */,
+				A5B1D7A7279E682800263D7A /* LaunchScreen.storyboard */,
+				A5B1D7AA279E682800263D7A /* Info.plist */,
+			);
+			path = InfinityScrollView_Example;
+			sourceTree = "<group>";
+		};
+		A5B1D7C0279E6D6700263D7A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5B1D7C1279E6D6700263D7A /* InfinityScrollView_Framework.framework */,
+				8DFE5A6885EAF7971461988C /* Pods_InfinityScrollView_Example.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A5B1D798279E682600263D7A /* InfinityScrollView_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5B1D7AD279E682800263D7A /* Build configuration list for PBXNativeTarget "InfinityScrollView_Example" */;
+			buildPhases = (
+				BB6564F9D4209F0133755473 /* [CP] Check Pods Manifest.lock */,
+				A5B1D795279E682600263D7A /* Sources */,
+				A5B1D796279E682600263D7A /* Frameworks */,
+				A5B1D797279E682600263D7A /* Resources */,
+				A5B1D7C4279E6D6700263D7A /* Embed Frameworks */,
+				83F11BEA86A1412CE054B261 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InfinityScrollView_Example;
+			productName = InfinityScrollView_Example;
+			productReference = A5B1D799279E682600263D7A /* InfinityScrollView_Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A5B1D791279E682500263D7A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					A5B1D798279E682600263D7A = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = A5B1D794279E682500263D7A /* Build configuration list for PBXProject "InfinityScrollView_Example" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A5B1D790279E682500263D7A;
+			productRefGroup = A5B1D79A279E682600263D7A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5B1D798279E682600263D7A /* InfinityScrollView_Example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A5B1D797279E682600263D7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5B1D7A9279E682800263D7A /* LaunchScreen.storyboard in Resources */,
+				A5B1D7A6279E682800263D7A /* Assets.xcassets in Resources */,
+				A5B1D7A4279E682600263D7A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		83F11BEA86A1412CE054B261 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InfinityScrollView_Example/Pods-InfinityScrollView_Example-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InfinityScrollView_Example/Pods-InfinityScrollView_Example-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InfinityScrollView_Example/Pods-InfinityScrollView_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB6564F9D4209F0133755473 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InfinityScrollView_Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A5B1D795279E682600263D7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5B1D7BD279E6B3100263D7A /* ExampleInfinityScrollViewController.swift in Sources */,
+				A5B1D79D279E682600263D7A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A5B1D7A2279E682600263D7A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5B1D7A3279E682600263D7A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A5B1D7A7279E682800263D7A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5B1D7A8279E682800263D7A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A5B1D7AB279E682800263D7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A5B1D7AC279E682800263D7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A5B1D7AE279E682800263D7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B9913F040DED0AF964CAA1A /* Pods-InfinityScrollView_Example.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = InfinityScrollView_Example/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Shakuro.InfinityScrollView-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A5B1D7AF279E682800263D7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45F3854A4186C4D14378D748 /* Pods-InfinityScrollView_Example.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = InfinityScrollView_Example/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Shakuro.InfinityScrollView-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A5B1D794279E682500263D7A /* Build configuration list for PBXProject "InfinityScrollView_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5B1D7AB279E682800263D7A /* Debug */,
+				A5B1D7AC279E682800263D7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5B1D7AD279E682800263D7A /* Build configuration list for PBXNativeTarget "InfinityScrollView_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5B1D7AE279E682800263D7A /* Debug */,
+				A5B1D7AF279E682800263D7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A5B1D791279E682500263D7A /* Project object */;
+}

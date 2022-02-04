@@ -1,0 +1,6 @@
+framework module Shakuro_CommonTypes {
+  umbrella header "Shakuro.CommonTypes-umbrella.h"
+
+  export *
+  module * { export * }
+}

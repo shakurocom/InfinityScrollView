@@ -1,0 +1,27 @@
+# Xcode
+*/build/*
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+.DS_Store
+*.moved-aside
+DerivedData
+.idea/
+*.hmap
+*.xccheckout
+
+## Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# R.Swift
+*.generated.swift
+
+#CocoaPods
+#Pods

@@ -1,0 +1,29 @@
+PODS:
+  - Shakuro.CommonTypes (1.1.0)
+  - SwiftLint (0.43.1)
+
+DEPENDENCIES:
+  - Shakuro.CommonTypes (from `https://github.com/shakurocom/CommonTypes.git`, commit `0e152c810861a03127c46937682da7309897561e`)
+  - SwiftLint (= 0.43.1)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - SwiftLint
+
+EXTERNAL SOURCES:
+  Shakuro.CommonTypes:
+    :commit: 0e152c810861a03127c46937682da7309897561e
+    :git: https://github.com/shakurocom/CommonTypes.git
+
+CHECKOUT OPTIONS:
+  Shakuro.CommonTypes:
+    :commit: 0e152c810861a03127c46937682da7309897561e
+    :git: https://github.com/shakurocom/CommonTypes.git
+
+SPEC CHECKSUMS:
+  Shakuro.CommonTypes: ce6dc9fe3a068a5e663a554d433703e6f4ea6a9f
+  SwiftLint: 99f82d07b837b942dd563c668de129a03fc3fb52
+
+PODFILE CHECKSUM: 7c5a9f1d5c21e4e879c6cb37b39f3648d5b75d55
+
+COCOAPODS: 1.11.2
