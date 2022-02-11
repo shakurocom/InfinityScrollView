@@ -245,6 +245,13 @@ public class InfinityScrollView: UIView {
         super.setNeedsLayout()
     }
 
+    /// Index of item, which view is intersecting central line of drawing area.
+    ///
+    /// - returns: `nil` if there are no items
+    public func indexOfItemAtVisibleCenter() -> Int? {
+        return nearestVisibleCenterItem(targetOffsetX: internalScrollView.contentOffset.x)?.itemIndex
+    }
+
 }
 
 // MARK: - UIScrollViewDelegate
