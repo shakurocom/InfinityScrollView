@@ -12,13 +12,26 @@
 
 Task Manager is a Swift library designed to manage asynchronous operations. The main purpose of the Task Manager component is to encapsulate work with the server, database, and other background operations into unit-like operations or tasks. This helps to separate business logic from UI and reuse operations across the app.
 
+
+Infinity scroll example:
+
 ![](Resources/infinity_scroll.gif)
+
+
+Infinity scroll example with different items sizes:
 
 ![](Resources/infinity_scroll_with_different_sizes.gif)
 
+
+Infinity scroll example with snap to item center:
+
 ![](Resources/infinity_scroll_with_snap_to_center.gif)
 
+
+Single item behaviour:
+
 ![](Resources/single_item_behaviour.gif)
+
 
 ## Requirements
 
