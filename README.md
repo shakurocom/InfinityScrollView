@@ -10,7 +10,9 @@
 - [Usage](#usage)
 - [License](#license)
 
-Task Manager is a Swift library designed to manage asynchronous operations. The main purpose of the Task Manager component is to encapsulate work with the server, database, and other background operations into unit-like operations or tasks. This helps to separate business logic from UI and reuse operations across the app.
+`InfinityScrollView` is a Swift library designed to add ability to scroll endlessly items horizontally. `InfinityScrollView` has various configuration options like fast deceleration rate, snap to item center, configurable snap deceleration animations. 
+
+`InfinityScrollView` must have a data source and delegate objects. The data source must adopt the `InfinityScrollViewDataSource` protocol and the delegate must adopt the `InfinityScrollViewDelegate` protocol. The data source provides the views that `InfinityScrollView` will display. The delegate allows to respond to scrolling events.
 
 
 Infinity scroll example:

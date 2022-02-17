@@ -39,11 +39,15 @@ class ExampleInfinityScrollViewController: UIViewController {
         super.viewDidLoad()
         infinityScrollView.dataSource = self
         infinityScrollView.delegate = self
+        infinityScrollView.snapAnimation = .scrollView
+        infinityScrollView.setSingleItemBehavior(.tile)
+        infinityScrollView.isSnapEnabled = true
+
         infinityScrollViewHeightConstraint.constant = 200
         numberOfItemsTextField.text = "\(numberOfItems)"
         numberOfItemsTextField.delegate = self
         numberOfItemsSegmentedControl.selectedSegmentIndex = 3
-        useConstantItemWidthSwitch.isOn = true
+        useConstantItemWidthSwitch.isOn = false
         constantItemWidthSwitch.isOn = false
         showItemsBackgroundSwitch.isOn = false
         showVisualCenterMarkerSwitch.isOn = true
@@ -55,9 +59,7 @@ class ExampleInfinityScrollViewController: UIViewController {
         isSnapEnabledSwitch.isOn = infinityScrollView.isSnapEnabled
         snapAnimationSegmentedControl1.selectedSegmentIndex = 1
         snapAnimationSegmentedControl2.selectedSegmentIndex = -1
-        infinityScrollView.snapAnimation = .scrollView
         singleItemBehaviourSegmentedControl.selectedSegmentIndex = 0
-        infinityScrollView.setSingleItemBehavior(.tile)
         // a little bit of hacks (do not do this, kids)
         if let contentView = infinityScrollView.subviews.first(where: { $0 is UIScrollView })?.subviews.first {
             contentCenterMarkerView = UIView(frame: CGRect(x: 0, y: 0, width: 1, height: infinityScrollView.frame.height))
@@ -182,7 +184,7 @@ class ExampleInfinityScrollViewController: UIViewController {
         case 2:
             infinityScrollView.snapAnimation = .curve(duration: 0.4, name: .default)
         case 3:
-            infinityScrollView.snapAnimation = .spring(mass: 20, stiffness: 0.5, damping: 1)
+            infinityScrollView.snapAnimation = .spring(mass: 2, stiffness: 20, damping: 4)
         default: break
         }
         snapAnimationSegmentedControl1.selectedSegmentIndex = -1
