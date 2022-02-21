@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4B249B241716B480E7CBF742 /* Pods_InfinityScrollView_Framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DDB5FBB2CCD52B6E0271ED0 /* Pods_InfinityScrollView_Framework.framework */; };
 		A582C61C2799266D005AC4E8 /* InfinityScrollView_Framework.h in Headers */ = {isa = PBXBuildFile; fileRef = A582C61B2799266D005AC4E8 /* InfinityScrollView_Framework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A582C626279928E1005AC4E8 /* InfinityScrollView+Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = A582C623279928E1005AC4E8 /* InfinityScrollView+Models.swift */; };
 		A582C627279928E1005AC4E8 /* SingleTouchDownGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A582C624279928E1005AC4E8 /* SingleTouchDownGestureRecognizer.swift */; };
@@ -15,9 +14,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4DDB5FBB2CCD52B6E0271ED0 /* Pods_InfinityScrollView_Framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InfinityScrollView_Framework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		66ABC788681AD72C27B4ACC5 /* Pods-InfinityScrollView_Framework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InfinityScrollView_Framework.debug.xcconfig"; path = "Target Support Files/Pods-InfinityScrollView_Framework/Pods-InfinityScrollView_Framework.debug.xcconfig"; sourceTree = "<group>"; };
-		7C660E54F3F4B770076E8520 /* Pods-InfinityScrollView_Framework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InfinityScrollView_Framework.release.xcconfig"; path = "Target Support Files/Pods-InfinityScrollView_Framework/Pods-InfinityScrollView_Framework.release.xcconfig"; sourceTree = "<group>"; };
 		A582C6182799266D005AC4E8 /* InfinityScrollView_Framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = InfinityScrollView_Framework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A582C61B2799266D005AC4E8 /* InfinityScrollView_Framework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfinityScrollView_Framework.h; sourceTree = "<group>"; };
 		A582C623279928E1005AC4E8 /* InfinityScrollView+Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "InfinityScrollView+Models.swift"; sourceTree = "<group>"; };
@@ -30,7 +26,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B249B241716B480E7CBF742 /* Pods_InfinityScrollView_Framework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +35,6 @@
 		3691320BB850FC7DA80CFCBD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				66ABC788681AD72C27B4ACC5 /* Pods-InfinityScrollView_Framework.debug.xcconfig */,
-				7C660E54F3F4B770076E8520 /* Pods-InfinityScrollView_Framework.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -53,7 +46,6 @@
 				A582C61A2799266D005AC4E8 /* InfinityScrollView_Framework */,
 				A582C6192799266D005AC4E8 /* Products */,
 				3691320BB850FC7DA80CFCBD /* Pods */,
-				FD7C3C7496BB425CA49C6BC7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,14 +75,6 @@
 			path = Source;
 			sourceTree = SOURCE_ROOT;
 		};
-		FD7C3C7496BB425CA49C6BC7 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				4DDB5FBB2CCD52B6E0271ED0 /* Pods_InfinityScrollView_Framework.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -109,7 +93,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A582C61F2799266D005AC4E8 /* Build configuration list for PBXNativeTarget "InfinityScrollView_Framework" */;
 			buildPhases = (
-				7DB582E52244D6D70AE7A6D0 /* [CP] Check Pods Manifest.lock */,
 				A582C6132799266D005AC4E8 /* Headers */,
 				A582C6142799266D005AC4E8 /* Sources */,
 				A582C6152799266D005AC4E8 /* Frameworks */,
@@ -165,31 +148,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		7DB582E52244D6D70AE7A6D0 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-InfinityScrollView_Framework-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A582C6142799266D005AC4E8 /* Sources */ = {
@@ -329,7 +287,6 @@
 		};
 		A582C6202799266D005AC4E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 66ABC788681AD72C27B4ACC5 /* Pods-InfinityScrollView_Framework.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -357,7 +314,6 @@
 		};
 		A582C6212799266D005AC4E8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7C660E54F3F4B770076E8520 /* Pods-InfinityScrollView_Framework.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
