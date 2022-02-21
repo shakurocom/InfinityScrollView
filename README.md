@@ -12,8 +12,6 @@
 
 `InfinityScrollView` is a Swift library designed to add ability to scroll endlessly items horizontally. `InfinityScrollView` has various configuration options like fast deceleration rate, snap to item center, configurable snap deceleration animations. 
 
-`InfinityScrollView` must have a data source and delegate objects. The data source must adopt the `InfinityScrollViewDataSource` protocol and the delegate must adopt the `InfinityScrollViewDelegate` protocol. The data source provides the views that `InfinityScrollView` will display. The delegate allows to respond to scrolling events.
-
 
 Infinity scroll example:
 
@@ -63,7 +61,7 @@ If you prefer not to use CocoaPods, you can integrate Shakuro.InfinityScrollView
 
 ## Usage
 
-TODO
+Just create `InfinityScrollView` programmatically or in storyboard. `InfinityScrollView` must have a data source and delegate objects. The data source must adopt the `InfinityScrollViewDataSource` protocol and the delegate must adopt the `InfinityScrollViewDelegate` protocol. The data source provides the views that `InfinityScrollView` will display. The delegate allows to respond to scrolling events.
 
 Have a look at the [InfinityScrollView_Example](https://github.com/shakurocom/InfinityScrollView/tree/main/InfinityScrollView_Example)
 
