@@ -63,7 +63,7 @@ If you prefer not to use CocoaPods, you can integrate Shakuro.InfinityScrollView
 
 Just create `InfinityScrollView` programmatically or in storyboard. `InfinityScrollView` must have a data source and delegate objects. The data source must adopt the `InfinityScrollViewDataSource` protocol and the delegate must adopt the `InfinityScrollViewDelegate` protocol. The data source provides the views that `InfinityScrollView` will display. The delegate allows to respond to scrolling events.
 
-Have a look at the [InfinityScrollView_Example](https://github.com/shakurocom/InfinityScrollView/tree/main/InfinityScrollView_Example)
+Have a look at the [InfinityScrollView_Example](https://github.com/shakurocom/InfinityScrollView/tree/main/InfinityScrollView_Example) (perform `pod install` before usage)
 
 ## License
 
