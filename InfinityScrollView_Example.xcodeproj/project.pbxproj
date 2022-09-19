@@ -60,6 +60,33 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		6B9CC1B228D8692500DE744A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A5B1D7AA279E682800263D7A /* Info.plist */,
+				A5B1D7A5279E682800263D7A /* Assets.xcassets */,
+				6B9CC1B328D8693100DE744A /* UI */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6B9CC1B328D8693100DE744A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				A5B1D7A7279E682800263D7A /* LaunchScreen.storyboard */,
+				A5B1D7A2279E682600263D7A /* Main.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		6B9CC1B428D8695C00DE744A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				A5B1D7BC279E6B3100263D7A /* ExampleInfinityScrollViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		A5B1D790279E682500263D7A = {
 			isa = PBXGroup;
 			children = (
@@ -82,11 +109,8 @@
 			isa = PBXGroup;
 			children = (
 				A5B1D79C279E682600263D7A /* AppDelegate.swift */,
-				A5B1D7BC279E6B3100263D7A /* ExampleInfinityScrollViewController.swift */,
-				A5B1D7A2279E682600263D7A /* Main.storyboard */,
-				A5B1D7A5279E682800263D7A /* Assets.xcassets */,
-				A5B1D7A7279E682800263D7A /* LaunchScreen.storyboard */,
-				A5B1D7AA279E682800263D7A /* Info.plist */,
+				6B9CC1B228D8692500DE744A /* Resources */,
+				6B9CC1B428D8695C00DE744A /* UI */,
 			);
 			path = InfinityScrollView_Example;
 			sourceTree = "<group>";
@@ -322,7 +346,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = InfinityScrollView_Example/Info.plist;
+				INFOPLIST_FILE = InfinityScrollView_Example/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -349,7 +373,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = InfinityScrollView_Example/Info.plist;
+				INFOPLIST_FILE = InfinityScrollView_Example/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
