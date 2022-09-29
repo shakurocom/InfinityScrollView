@@ -11,9 +11,9 @@
 - [License](#license)
 
 `InfinityScrollView` is a Swift library that allows you to add endless horizontal scroll to different items. `InfinityScrollView` has various configuration options:
-    * fast deceleration rate 
-    * snap to center item 
-    * configurable snap deceleration animations
+- fast deceleration rate 
+- snap to center item 
+- configurable snap deceleration animations
  
 
 Infinity scroll example:
