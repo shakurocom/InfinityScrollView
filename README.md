@@ -10,8 +10,11 @@
 - [Usage](#usage)
 - [License](#license)
 
-`InfinityScrollView` is a Swift library designed to add ability to scroll endlessly items horizontally. `InfinityScrollView` has various configuration options like fast deceleration rate, snap to item center, configurable snap deceleration animations. 
-
+`InfinityScrollView` is a Swift library that allows you to add endless horizontal scroll to different items. `InfinityScrollView` has various configuration options:
+    * fast deceleration rate 
+    * snap to center item 
+    * configurable snap deceleration animations
+ 
 
 Infinity scroll example:
 
@@ -23,7 +26,7 @@ Infinity scroll example with different items sizes:
 ![](Resources/infinity_scroll_with_different_sizes.gif)
 
 
-Infinity scroll example with snap to item center:
+Infinity scroll example with snap to center item:
 
 ![](Resources/infinity_scroll_with_snap_to_center.gif)
 
@@ -61,9 +64,9 @@ If you prefer not to use CocoaPods, you can integrate Shakuro.InfinityScrollView
 
 ## Usage
 
-Just create `InfinityScrollView` programmatically or in storyboard. `InfinityScrollView` must have a data source and delegate objects. The data source must adopt the `InfinityScrollViewDataSource` protocol and the delegate must adopt the `InfinityScrollViewDelegate` protocol. The data source provides the views that `InfinityScrollView` will display. The delegate allows to respond to scrolling events.
+Just create `InfinityScrollView` programmatically or in the storyboard. Take into account that `InfinityScrollView` must have the data source and the delegate objects. The data source needs to adopt the `InfinityScrollViewDataSource` protocol and the delegate has to adopt the `InfinityScrollViewDelegate` protocol. The data source provides the views that `InfinityScrollView` will display. The delegate allows you to respond to scrolling events.
 
-Have a look at the [InfinityScrollView_Example](https://github.com/shakurocom/InfinityScrollView/tree/main/InfinityScrollView_Example) (perform `pod install` before usage)
+Take a look at the [InfinityScrollView_Example](https://github.com/shakurocom/InfinityScrollView/tree/main/InfinityScrollView_Example) (you need to perform `pod install` before before using it).
 
 ## License
 
@@ -71,7 +74,6 @@ Shakuro.InfinityScrollView is released under the MIT license. [See LICENSE](http
 
 ## Give it a try and reach us
 
-Star this tool if you like it, it will help us grow and add new useful things. 
-Feel free to reach out and hire our team to develop a mobile or web project for you.
+Star this tool if you like it, it will help us grow and add new useful things. Feel free to reach out and hire our team to develop a web project for you.
 
 
