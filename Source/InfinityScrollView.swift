@@ -209,6 +209,34 @@ public class InfinityScrollView: UIView {
 
     // MARK: - Public
 
+    public func viewForItem(at index: Int) -> UIView? {
+        return visibleTileViews[index]
+    }
+
+    public func accessibilityScrollForward() {
+        guard visibleTileViews.count > 1,
+              let currentIndex = indexOfItemAtVisibleCenter()
+        else {
+            return
+        }
+        let nextIndex = currentIndex + 1 == visibleTileViews.count ? 0 : currentIndex + 1
+        if let frame = visibleTileViews[nextIndex]?.frame {
+            internalScrollView.setContentOffset(CGPoint(x: frame.midX - (internalScrollView.frame.width / 2), y: 0), animated: true)
+        }
+    }
+
+    public func accessibilityScrollBackward() {
+        guard visibleTileViews.count > 1,
+              let currentIndex = indexOfItemAtVisibleCenter()
+        else {
+            return
+        }
+        let previousIndex = currentIndex - 1 == -1 ? visibleTileViews.count - 1 : currentIndex - 1
+        if let frame = visibleTileViews[previousIndex]?.frame {
+            internalScrollView.setContentOffset(CGPoint(x: frame.midX - (internalScrollView.frame.width / 2), y: 0), animated: true)
+        }
+    }
+
     public func reloadData() {
         recreateCacheFromDataSource()
         updateScroll()
