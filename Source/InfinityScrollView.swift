@@ -197,6 +197,7 @@ public class InfinityScrollView: UIView {
             recenterThrottleDistance = visibleAreaOverhangX / 2.0
             recenterIfNeeded(allowThrottle: false, allowShiftTileViews: false)
             tileItemViewsIfNeeded(allowThrottle: false, targetContentOffsetX: nil)
+            setupSingleItemIfNeeded()
         }
 
         // height-dependent layout
@@ -204,7 +205,7 @@ public class InfinityScrollView: UIView {
             updateVisibleTileViews(height: bounds.height)
         }
 
-        lastLayoutBoundsSize = frame.size
+        lastLayoutBoundsSize = bounds.size
     }
 
     // MARK: - Public
