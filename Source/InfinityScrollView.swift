@@ -214,6 +214,15 @@ public class InfinityScrollView: UIView {
         return visibleTileViews[index]
     }
 
+    public func setSelectedIndex(_ selectedIndex: Int, animated: Bool = false) {
+        guard visibleTileViews.count > selectedIndex else {
+            return
+        }
+        if let frame = visibleTileViews[selectedIndex]?.frame {
+            internalScrollView.setContentOffset(CGPoint(x: frame.midX - (internalScrollView.frame.width / 2), y: 0), animated: animated)
+        }
+    }
+
     public func accessibilityScrollForward() {
         guard visibleTileViews.count > 1,
               let currentIndex = indexOfItemAtVisibleCenter()
