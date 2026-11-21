@@ -4,7 +4,11 @@
 //
 
 import Foundation
+#if SWIFT_PACKAGE
+import CommonTypes
+#else
 import Shakuro_CommonTypes
+#endif
 import UIKit
 
 public protocol InfinityScrollViewDataSource: AnyObject {

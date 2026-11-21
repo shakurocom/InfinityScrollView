@@ -58,6 +58,23 @@ Then, run the following command:
 $ pod install
 ```
 
+### Swift Package Manager
+
+Add the package to the `dependencies` of your `Package.swift`:
+
+```swift
+.package(url: "https://github.com/shakurocom/InfinityScrollView.git", from: "1.0.5")
+```
+
+and the product to your target:
+
+```swift
+.product(name: "InfinityScrollView", package: "InfinityScrollView")
+```
+
+In Xcode, use File > Add Package Dependencies… with `https://github.com/shakurocom/InfinityScrollView.git`.
+With SPM the module is `InfinityScrollView` (`import InfinityScrollView`); with CocoaPods it is `Shakuro_InfinityScrollView`.
+
 ### Manually
 
 If you prefer not to use CocoaPods, you can integrate Shakuro.InfinityScrollView simply by copying it to your project.
