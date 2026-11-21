@@ -11,6 +11,7 @@ import Shakuro_CommonTypes
 #endif
 import UIKit
 
+@MainActor
 public protocol InfinityScrollViewDataSource: AnyObject {
 
     /// - parameter infinityScrollView: caller.
@@ -39,6 +40,7 @@ public protocol InfinityScrollViewDataSource: AnyObject {
 
 }
 
+@MainActor
 public protocol InfinityScrollViewDelegate: AnyObject {
 
     /// Will not be reported if there are no items in InfinityScrollView
@@ -59,6 +61,7 @@ public protocol InfinityScrollViewDelegate: AnyObject {
 /// Can be scrolled left and right.
 /// Looped: after last items goes first one.
 /// If only single item - user will see endless amounts of this item.
+@MainActor
 public class InfinityScrollView: UIView {
 
     private enum Constant {
@@ -100,6 +103,10 @@ public class InfinityScrollView: UIView {
     ///
     /// Default value is `SnapAnimation.scrollView`
     public var snapAnimation: SnapAnimation = .scrollView
+
+    public var shouldUpdateItemsApperance: Bool = false
+
+    public var shouldScrollToSelectedItem: Bool = false
 
     /// Behaviour for data source of only one item.
     ///
@@ -201,7 +208,6 @@ public class InfinityScrollView: UIView {
             recenterThrottleDistance = visibleAreaOverhangX / 2.0
             recenterIfNeeded(allowThrottle: false, allowShiftTileViews: false)
             tileItemViewsIfNeeded(allowThrottle: false, targetContentOffsetX: nil)
-            setupSingleItemIfNeeded()
         }
 
         // height-dependent layout
@@ -209,7 +215,8 @@ public class InfinityScrollView: UIView {
             updateVisibleTileViews(height: bounds.height)
         }
 
-        lastLayoutBoundsSize = bounds.size
+        lastLayoutBoundsSize = frame.size
+        updateItemsAppearanceIfNeeded()
     }
 
     // MARK: - Public
@@ -305,6 +312,7 @@ extension InfinityScrollView: UIScrollViewDelegate {
             return
         }
         tileItemViewsIfNeeded(allowThrottle: true, targetContentOffsetX: nil)
+        updateItemsAppearanceIfNeeded()
     }
 
      public func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
@@ -609,6 +617,16 @@ private extension InfinityScrollView {
         cachedZeroItemOffset = -cachedItemWidths[0] / 2.0
     }
 
+    private func updateItemsAppearanceIfNeeded() {
+        guard shouldUpdateItemsApperance else {
+            return
+        }
+        visibleTileViews.forEach({ (_, visibleTileView) in
+            let centerXPoint = internalScrollView.contentOffset.x + internalScrollView.bounds.width * 0.5
+            visibleTileView.alpha = max(0.2, 1.0 - fabs(visibleTileView.center.x - centerXPoint) / visibleTileView.bounds.width)
+        })
+    }
+
     /// Tile views for items to fill visible area.
     /// Fillable area extended by `visibleAreaOverhangX` left and right.
     ///
@@ -877,8 +895,14 @@ private extension InfinityScrollView {
                 nearestDistance = distance
             }
         }
+
         guard let foundElement = nearestTile else {
             return
+        }
+        if shouldScrollToSelectedItem {
+            let offsetY = internalScrollView.contentOffset.y
+            let offsetX = foundElement.value.frame.midX - internalScrollView.bounds.width * 0.5
+            internalScrollView.setContentOffset(CGPoint(x: offsetX, y: offsetY), animated: true)
         }
         let index = itemIndex(tileIndex: foundElement.key)
         delegate?.infinityScrollView(self, didSelectItemAtIndex: index)
